@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  web01:
+    image: nginx
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf.template
+      - ./website/:/usr/share/nginx/html/
+    ports:
+      - "8083:80"
+    environment:
+      - FLAG=ITASEC{p1r4t3s_h4v3_7h3_fl46!}
+    command: /bin/bash -c "envsubst < /etc/nginx/conf.d/default.conf.template > /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'"

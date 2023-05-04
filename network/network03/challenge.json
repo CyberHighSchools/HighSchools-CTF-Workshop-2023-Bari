@@ -1,0 +1,40 @@
+{
+  "title": "Top Secret Base",
+  "description": "Sono riuscito ad intercettare il traffico email di un appaltatore del governo.\n\nPuoi aiutarmi ad entrare in una delle loro basi?\n\nSono sicuro che si siano scambiati il codice di accesso in una delle loro mail.\n\nAutore: Claudio Ripa <@ripac99>",
+  "authors": [
+    "Claudio Ripa <@ripac99>"
+  ],
+  "tags": [
+    "network"
+  ],
+  "hiddenTags": [],
+  "order": 33,
+  "flags": [
+    "^ITASEC\\{n0t_s0_s3cr3t_b4s3\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 100,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "top_secret_base.pcap.gz",
+      "type": "upload",
+      "path": "./attachments/top_secret_base.pcap.gz"
+    }
+  ],
+  "hints": [
+    {
+      "name": "Hint 1",
+      "content": "La mail conterr\u00e0 sicuramente alcune parole specifiche, come base o codice.",
+      "price": 0
+    },
+    {
+      "name": "Hint 2",
+      "content": "Il codice di accesso potrebbe utilizzare una particolare codifica (magari una specifica base).",
+      "price": 0
+    }
+  ]
+}

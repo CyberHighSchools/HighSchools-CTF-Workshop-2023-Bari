@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  crypto03:
+    container_name: flask_app
+    build: .
+    restart: unless-stopped
+    ports:
+      - 8080:8080
+    environment:
+      - URL=http://xorlandia.challs.itasec.it:8080
+      - FLAG=ITASEC{a_xor_b_equals_to_c_means_c_xor_b_equals_to_a!}
+      - KEY=gabibbo

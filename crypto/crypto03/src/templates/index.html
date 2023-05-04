@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<title>XorLandia</title>
+		<style>
+		body {
+			background-color: #222222;
+			color: #dddddd;
+			font-family: monospace;
+			overflow: hidden;
+			font-size: 18px;
+		}
+		#title {
+			text-align: center;
+			margin-top: 12%;
+		}
+		#caption {
+			text-align: center;
+			margin-top: 5px;
+			margin-bottom: 50px;
+		}
+		main {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			font-size: 18px;
+		}
+		main > div {
+			display: flex;
+    		flex-direction: row;
+    		justify-content: space-between;
+		   width: 80%;
+    		align-items: baseline;
+		}
+		input, p {
+			width: 75%;
+			height: 30px;
+			margin-top: 5px;
+			margin-bottom: 30px;
+			background-color: #222;
+			color: #ddd;
+			font-family: monospace;
+			font-size: 18px;
+			border-bottom: 1px solid white;
+		}
+		</style>
+	</head>
+	<body>
+		<h2 id="title">^ X0rland1a ^</h2>
+		<h4 id="caption">Benvenuti nel magico mondo dello <span style="color: yellow"><b>XOR</b></span></h4>
+		<main>
+			<div>
+				<label for="testo">Testo da xorare (Hex)</label>
+				<input name="testo" id="testo" placeholder="" value="{{ flag_enc }}" readonly>
+			</div>
+			<div>
+				<label for="chiave">Chiave (ASCII)</label>
+				<input name="chiave" id="chiave" placeholder="">
+			</div>
+			<div>
+				<label for="risultato">Risultato (ASCII)</label>
+				<p id="risultato">&nbsp;</p>
+			</div>
+			<div>
+				<label for="hex">Risultato (Hex)</label>
+				<p id="hex" style="overflow: hidden">&nbsp;</p>
+			</div>
+		</main>
+  <script>
+		const calcolo = async () => {
+			res = document.getElementById('risultato');
+			hex_res = document.getElementById('hex');
+			text = document.getElementById('testo').value;
+			key = document.getElementById('chiave').value;
+			result = await fetch('/api/xor', {
+				method: 'post',
+				headers: {
+			    	"Content-Type": "application/json",
+			  	},
+			  	body: JSON.stringify({
+					text: text,
+					key: key
+				})
+			}).then(response => response.json()).then(res => res);
+			res.textContent = result.ascii;
+			hex_res.textContent = result.hex;
+		};
+		for (let el of document.querySelectorAll('#testo, #chiave')) {
+    		el.addEventListener('keyup', calcolo);   
+		}
+  </script>
+</html>

@@ -1,0 +1,45 @@
+{
+  "title": "Banana Split",
+  "description": "\u00c8 davvero un dolce delizioso, non so cosa dire! Di certo la flag non sar\u00e0 nascosta nell'immagine...\n\nN.B. La flag \u00e8 divisa in due parti.\n\nAutore: Nicola Guerrera <@nik012003>",
+  "authors": [
+    "Nicola Guerrera <@nik012003>"
+  ],
+  "tags": [
+    "network"
+  ],
+  "hiddenTags": [],
+  "order": 34,
+  "flags": [
+    "^ITASEC\\{I_lik3_d3ss3rts_part1_4nd_d3lici0us_fruits_part2\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 100,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "banana.jpg",
+      "type": "upload",
+      "path": "./attachments/banana.jpg"
+    },
+    {
+      "name": "split.png",
+      "type": "upload",
+      "path": "./attachments/split.png"
+    }
+  ],
+  "hints": [
+    {
+      "name": "Hint 1",
+      "content": "Questo dolce \u00e8 proprio EXIFquito!",
+      "price": 0
+    },
+    {
+      "name": "Hint 2",
+      "content": "Il bit meno significativo a volte \u00e8 quello piu' rilevante...",
+      "price": 0
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+   {% include 'head.html' %}
+  <body> 
+    {% include 'nav.html' %}
+    <div class="box-wrapper">
+        
+        <div class="box">
+            <img src="/static/imgs/coin.svg" alt="coins" />
+            <h2>Donazione</h2>
+            <p>Supporta il developer di ITASECshop. <br/>Dona usando il form sottostante.</p>
+            <form action="/store/donate" method="post">
+                <fieldset>
+                    <p><input type="number" name="price" placeholder="Inserisci la somma da donare"></p>
+                    <p><input type="submit" value="Dona"></p>
+                </fieldset>
+            </form>
+            {% if error is not none %}
+                <div class="error">{{ error }}</div>
+            {% elif success == True %}
+                <div class="success">Donazione avvenuta con successo.</div>
+            {% endif %}
+        </div>
+    </div>
+    {% include 'footer.html' %}
+</body>
+</html>

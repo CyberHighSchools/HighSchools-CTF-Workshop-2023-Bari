@@ -1,0 +1,45 @@
+{
+  "title": "ITASECshop - H4ck3d",
+  "description": "ITASEC quest'anno ha anche un suo shop di gadget personalizzati!\n\nSe vuoi darci un occhiata puoi comprare qualche gadget [qui](http://itasecshop.challs.itasec.it:8085)\n\nNonostante il sito sia stato creato da programmatori professionisti, qualche giorno fa c'\u00e8 stato un attacco hacker allo shop, ma ora il sito \u00e8 stato messo in sicurezza... o quasi?\n\nAutori:\n\n- Domingo Dirutigliano <@DomySh>\n- Vincenzo Turturro <@Sush1>",
+  "authors": [
+    "Domingo Dirutigliano <@DomySh>",
+    "Vincenzo Turturro <@Sush1>"
+  ],
+  "tags": [
+    "web"
+  ],
+  "hiddenTags": [],
+  "order": 26,
+  "flags": [
+    "^ITASEC\\{An_inn0cent_\\(and_Cute\\)_AP1\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 100,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [
+    {
+      "name": "Hint 1",
+      "content": "Base64 e hex nascondono le informazioni solo all'apparenza...",
+      "price": 0
+    },
+    {
+      "name": "Hint 2",
+      "content": "./shell ti offre una shell linux completa... [https://kinsta.com/blog/linux-commands/](https://kinsta.com/blog/linux-commands/)",
+      "price": 0
+    }
+  ],
+  "endpoint": {
+    "type": "http",
+    "url": "http://itasecshop.challs.itasec.it:8085/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 5
+    }
+  }
+}

@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+   crypto06:
+    build: ./bad_at_math
+    restart: always
+    ports:
+      - "8082:80"

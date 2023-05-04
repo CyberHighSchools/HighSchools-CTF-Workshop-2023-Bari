@@ -1,0 +1,34 @@
+{
+  "title": "Un giro sugli \"alberi\"",
+  "description": "Il losco individuo ha chiesto aiuto con un post sul [suo profilo Facebook](https://www.facebook.com/profile.php?id=100091620543560).\n\nAiutalo ad ottenere ulteriori informazioni.\n\np.s. Per risolvere questa challenge \u00e8 necessario possedere un account facebook.\n\nAutore: Pierantonio D'Agostino <@KorSetta>",
+  "authors": [
+    "Pierantonio D'Agostino <@KorSetta>"
+  ],
+  "tags": [
+    "osint"
+  ],
+  "hiddenTags": [],
+  "order": 13,
+  "flags": [
+    "^ITASEC\\{m1_pi4cci0n0_gli_4lb3r11111\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 100,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [
+    {
+      "name": "Hint 1",
+      "content": "Elementare Watson...",
+      "price": 0
+    },
+    {
+      "name": "Hint 2",
+      "content": "[Sherlock](https://github.com/sherlock-project/sherlock) pu\u00f2 essere di tuo aiuto.",
+      "price": 0
+    }
+  ]
+}

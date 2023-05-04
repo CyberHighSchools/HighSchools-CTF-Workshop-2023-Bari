@@ -1,0 +1,44 @@
+{
+  "title": "CookieC(TF)liker2",
+  "description": "Ho trovato questo idle game mentre mi annoiavo a lavoro. \u00c8 semplice ma sono sicuro nasconda qualcosa...\n\nMi sembra che questo sito abbia delle pretese troppo difficili da soddisfare...\n\nSito: [http://cookie.challs.itasec.it:8084](http://cookie.challs.itasec.it:8084)\n\nAutore: Gianluca Parisi <@whyn0>",
+  "authors": [
+    "Gianluca Parisi <@whyn0>"
+  ],
+  "tags": [
+    "web"
+  ],
+  "hiddenTags": [],
+  "order": 23,
+  "flags": [
+    "^ITASEC\\{99999999999999_175_4_l177l3_700_much_d0n7_y0u_7h1nk\\?\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 100,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [
+    {
+      "name": "Hint 1",
+      "content": "Sembra impossibile cliccare sul biscotto 99999999999999 volte, ci deve essere sicuramente un altro modo...",
+      "price": 0
+    },
+    {
+      "name": "Hint 2",
+      "content": "Sicuramente la console nei devtools pu\u00f2 essere utile!",
+      "price": 0
+    }
+  ],
+  "endpoint": {
+    "type": "http",
+    "url": "http://cookie.challs.itasec.it:8084/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 5
+    }
+  }
+}

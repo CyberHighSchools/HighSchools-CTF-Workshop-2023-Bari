@@ -1,0 +1,21 @@
+<header class="header">
+	<div class="header-content">
+		<div class="header-logo">
+			<a href="/" class="logo">ITASECshop</a>
+		</div>
+		<nav class="header-navigation">
+            <a href="/store">Store</a>
+			<a href="/store/donate">Donate</a>
+            {% if user is not undefined %}
+				{% if user is not none %}
+					<a href="/logout">Log out</a>
+					<a class="link-button">{{user.username }}: {{ "{:.2f}".format(user.wallet) }}$</a>
+				{% else %}
+					<a href="login" class="link-button">Login</a>
+				{% endif %}
+            {% else %}
+                <a href="login" class="link-button">Login</a>
+            {% endif %}
+		</nav>
+	</div>
+</header> 

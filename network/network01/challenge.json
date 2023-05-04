@@ -1,0 +1,40 @@
+{
+  "title": "Basic Shark",
+  "description": "Nelle challenge di questa categoria ti verr\u00e0 fornito in allegato un file pcap. Esso contiene la cattura di pacchetti utili alla scoperta della flag.\n\nPer analizzare i file pcap, \u00e8 consigliato utilizzare un tool come [Wireshark](https://www.wireshark.org/download.html).\n\nIn questa challenge, ti interessano particolarmente i pacchetti HTTP.\n\nAutore: Nicola Guerrera <@nik012003>",
+  "authors": [
+    "Nicola Guerrera <@nik012003>"
+  ],
+  "tags": [
+    "network"
+  ],
+  "hiddenTags": [],
+  "order": 31,
+  "flags": [
+    "^ITASEC\\{A_b4sic_fl4g_f0r_a_b4sic_auth\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 100,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "my_header_hurts.pcapng.gz",
+      "type": "upload",
+      "path": "./attachments/my_header_hurts.pcapng.gz"
+    }
+  ],
+  "hints": [
+    {
+      "name": "Hint 1",
+      "content": "Cerca in _testa_ ai pacchetti HTTP...",
+      "price": 0
+    },
+    {
+      "name": "Hint 2",
+      "content": "Per accedere ad una cartella privata, hai bisogno di un _Authorization_.",
+      "price": 0
+    }
+  ]
+}

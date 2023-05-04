@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+   {% include 'head.html' %}
+  <body> 
+    {% include 'nav.html' %}
+    <div class="box-wrapper">
+        <div id="login">
+            {% if error is not none %}
+                <div class="error">{{ error }}</div>
+            {% endif %}
+            <h1><strong>Ciao</strong> straniero!</h1>
+            <form action="/register" method="post">
+            <fieldset>
+                <p><input type="text" required name="user" placeholder="Username"></p>
+                <p><input type="password" required name="psw" placeholder="Password"></p>
+                <p><a href="/login">Hai già un account?</a></p>
+                <p><input type="submit" value="Register"></p>
+            </fieldset>
+            </form>
+        </div>
+    </div>
+    {% include 'footer.html' %}
+</body>
+</html>

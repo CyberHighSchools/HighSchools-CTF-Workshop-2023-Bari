@@ -1,0 +1,19 @@
+#!/usr/bin/env python3
+import os, pwd, grp, sys
+
+def drop_privileges(uid_name='nobody', gid_name='nogroup'):
+    running_uid = pwd.getpwnam(uid_name).pw_uid
+    running_gid = grp.getgrnam(gid_name).gr_gid
+
+    os.setgroups([])
+
+    os.setgid(running_gid)
+    os.setuid(running_uid)
+
+    old_umask = os.umask(0o077)
+
+if __name__ == "__main__":
+    if len(sys.argv) > 1:
+        drop_privileges('rooot', 'rooot')
+        os.system(" ".join(sys.argv[1:]))
+

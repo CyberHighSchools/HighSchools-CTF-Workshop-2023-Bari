@@ -1,0 +1,45 @@
+{
+  "title": "CryptoMeme",
+  "description": "Questo (non) \u00e8 un esempio di scambio tra chiave e testo cifrato.\n\nAutore: Vincenzo Cantatore <@M0rthimer>",
+  "authors": [
+    "Vincenzo Cantatore <@M0rthimer>"
+  ],
+  "tags": [
+    "crypto"
+  ],
+  "hiddenTags": [],
+  "order": 44,
+  "flags": [
+    "^ITASEC\\{CHAD_CAESAR_BASED_BLAISE\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 100,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "CryptoMeme.png",
+      "type": "upload",
+      "path": "./attachments/CryptoMeme.png"
+    },
+    {
+      "name": "CryptoMeme.txt",
+      "type": "upload",
+      "path": "./attachments/CryptoMeme.txt"
+    }
+  ],
+  "hints": [
+    {
+      "name": "Hint 1",
+      "content": "Fai una ricerca su Cesare e Vigenere e i loro cifrari.",
+      "price": 0
+    },
+    {
+      "name": "Hint 2",
+      "content": "CyberChef e dcode.fr sono tuoi amici usali!",
+      "price": 0
+    }
+  ]
+}

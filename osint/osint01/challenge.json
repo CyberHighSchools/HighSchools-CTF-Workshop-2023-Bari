@@ -1,0 +1,40 @@
+{
+  "title": "Uno strano incontro...",
+  "description": "Ho ricevuto un'offerta di lavoro da uno strano individuo. Mi ha detto di incontrarci in un bar di [questo piccolo paese](https://goo.gl/maps/cQvLZKLL5Ywe1APU7) ma non mi ha detto in quale. Mi sapresti aiutare?\n\nMi ha inviato un'immagine dicendomi che mi sta aspettando di fronte al bar.\n\nIl formato della flag \u00e8: `ITASEC{nome_del_bar}`\n\nQuindi se per esempio il bar si chiama \"Bar da Giovanni\", la flag sar\u00e0: `ITASEC{bar_da_giovanni}`\n\nAutore: Pierluigi De Palo <@gigi0>",
+  "authors": [
+    "Pierluigi De Palo <@gigi0>"
+  ],
+  "tags": [
+    "osint"
+  ],
+  "hiddenTags": [],
+  "order": 11,
+  "flags": [
+    "^ITASEC\\{bar_del_corso\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 100,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "luogo-incontro.png",
+      "type": "upload",
+      "path": "./attachments/luogo-incontro.png"
+    }
+  ],
+  "hints": [
+    {
+      "name": "Hint 1",
+      "content": "Ci sono tre bar, solo due sono uno vicino all'altro come nella foto...",
+      "price": 0
+    },
+    {
+      "name": "Hint 2",
+      "content": "Il bar in questione \u00e8 quello sulla destra della foto.",
+      "price": 0
+    }
+  ]
+}

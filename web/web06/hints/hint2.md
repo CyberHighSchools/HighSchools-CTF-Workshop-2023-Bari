@@ -1,0 +1,1 @@
+./shell ti offre una shell linux completa... [https://kinsta.com/blog/linux-commands/](https://kinsta.com/blog/linux-commands/)

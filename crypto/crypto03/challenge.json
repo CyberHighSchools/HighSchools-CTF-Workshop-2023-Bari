@@ -1,0 +1,44 @@
+{
+  "title": "X0rland1a",
+  "description": "Benvenuto nel magico mondo dello **XOR** \u2295!\n\nSito: [http://xorlandia.challs.itasec.it:8080](http://xorlandia.challs.itasec.it:8080)\n\nAutore: Daniele Di Spirito <@DanieleDiSpirito>",
+  "authors": [
+    "Daniele Di Spirito <@DanieleDiSpirito>"
+  ],
+  "tags": [
+    "crypto"
+  ],
+  "hiddenTags": [],
+  "order": 43,
+  "flags": [
+    "^ITASEC\\{a_xor_b_equals_to_c_means_c_xor_b_equals_to_a!\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 100,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [
+    {
+      "name": "Hint 1",
+      "content": "Se la chiave \u00e8 **troppo breve** sar\u00e0 ripetuta.",
+      "price": 0
+    },
+    {
+      "name": "Hint 2",
+      "content": "Il formato della flag \u00e8 `ITASEC{...}`",
+      "price": 0
+    }
+  ],
+  "endpoint": {
+    "type": "http",
+    "url": "http://xorlandia.challs.itasec.it:8080/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 5
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "title": "remix",
+  "description": "Let's mix!\n\n![](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmRhNmMwY2ViMzljZjU5OTgwMGNkYzcxOGFiM2Y4ZjJkNjlkMzI2YSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/T7ukTzXQVmWqI/giphy.gif)\n\nIl nostro crypto-dj \ud83c\udfb5\n\nha fatto un crypto mix!\ud83d\udc47\n\nFormato della flag:: `ITASEC{messaggio_segreto}`\n\nAutore: Nicola Pace <@nicolapace>",
+  "authors": [
+    "Nicola Pace <@nicolapace>"
+  ],
+  "tags": [
+    "crypto"
+  ],
+  "hiddenTags": [],
+  "order": 41,
+  "flags": [
+    "^ITASEC\\{riscaldiamoci\\}$",
+    "^ITASEC\\{RISCALDIAMOCI\\}$",
+    "^ITASEC\\{Riscaldiamoci\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 100,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "remix.mp3",
+      "type": "upload",
+      "path": "./attachments/remix.mp3"
+    }
+  ],
+  "hints": [
+    {
+      "name": "Hint 1",
+      "content": "il gatto MORSE il topo",
+      "price": 0
+    },
+    {
+      "name": "Hint 2",
+      "content": "bip bip bip biiiiip biiiiip biiiiip bip bip bip <http://google.com/search?q=morse+code+audio+decoder>",
+      "price": 0
+    }
+  ]
+}

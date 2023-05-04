@@ -1,0 +1,1 @@
+Il bar in questione è quello sulla destra della foto.

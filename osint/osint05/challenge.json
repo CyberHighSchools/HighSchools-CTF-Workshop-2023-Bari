@@ -1,0 +1,40 @@
+{
+  "title": "Suonano al citofono...",
+  "description": "Il losco individuo mi ha inviato una foto dicendo di essersi iscritto ad un evento organizzato da un suo amico.\n\nSei in grado di recuperare il dominio del sito dal quale si \u00e8 registrato?\n\nDopo aver trovato il dominio, aiutami a contattare l'admin.\n\nIl formato della flag \u00e8: `ITASEC{Nome_Cognome}`\n\nQuindi se per esempio l'admin si chiama \"Mario Francesco Rossi\", la flag sar\u00e0: `ITASEC{Mario_Francesco_Rossi}`\n\nAutore: Oscar Urselli <@Polonium>",
+  "authors": [
+    "Oscar Urselli <@Polonium>"
+  ],
+  "tags": [
+    "osint"
+  ],
+  "hiddenTags": [],
+  "order": 15,
+  "flags": [
+    "^ITASEC\\{Paolo_Ernesto_Prinetto\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 100,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "osint05.jpeg",
+      "type": "upload",
+      "path": "./attachments/osint05.jpeg"
+    }
+  ],
+  "hints": [
+    {
+      "name": "Hint 1",
+      "content": "A friend of mine asked: \"Who Is?\"",
+      "price": 0
+    },
+    {
+      "name": "Hint 2",
+      "content": "I servizi di [Whois lookup](https://www.whois.com/whois/) vi permettono di visualizzare le informazioni pubbliche sui domini.",
+      "price": 0
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+version: "1.0"
+
+services:
+  crypto05:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "8081:8080"

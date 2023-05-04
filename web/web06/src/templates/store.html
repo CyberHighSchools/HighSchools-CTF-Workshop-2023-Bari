@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+   {% include 'head.html' %}
+  <body> 
+    {% include 'nav.html' %}
+	
+	<main>
+		<br>
+		<div class="responsive-container">
+			<h1 class="big-title">Benvenuto nel nostro store!</h1>
+			<br>
+			<div class="grid">
+					{% for item in articles: %}
+					<a class="product" href="/store/{{ item.id }}/buy">
+						<div class="product-image">
+							<img src="{{ item.img }}" />
+						</div>
+						<div class="product-content">
+							<div class="product-info">
+								<h2 class="product-title">{{ item.title }}</h2>
+								<p class="product-price">$ {{ item.price }}</p>
+							</div>
+							<button class="product-action" href="/test">Visualizza</button>
+						</div>
+					</a>
+					{% endfor %}
+			</div>
+		</div>
+	</main>
+    {% include 'footer.html' %}
+  </body>
+</html>
+

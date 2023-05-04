@@ -1,0 +1,34 @@
+{
+  "title": "La macchina del tempo",
+  "description": "Il losco individuo mi ha detto che \u00e8 in grado di viaggiare nel tempo.\n\nGli ho chiesto di aiutarmi a capire che cosa \u00e8 cambiato in [questa pagina web](http://www.azienda-losca.tech/) ma non lo ha fatto.\n\nMi sapresti dare una mano?\n\nAutore: Pierantonio D'Agostino <@KorSetta>",
+  "authors": [
+    "Pierantonio D'Agostino <@KorSetta>"
+  ],
+  "tags": [
+    "osint"
+  ],
+  "hiddenTags": [],
+  "order": 14,
+  "flags": [
+    "^ITASEC\\{tUtT0_riMAN3_su_1nt3rnEt\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 100,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [
+    {
+      "name": "Hint 1",
+      "content": "Esiste un archivio che immagazzina la storia di internet.",
+      "price": 0
+    },
+    {
+      "name": "Hint 2",
+      "content": "[Wayback machine](https://archive.org/web/) vi permette di vedere vecchie versioni dei siti.",
+      "price": 0
+    }
+  ]
+}

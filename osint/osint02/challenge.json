@@ -1,0 +1,34 @@
+{
+  "title": "...con uno strano imprenditore",
+  "description": "Dopo aver incontrato il losco individuo, mi ha condiviso il suo [profilo Facebook](https://www.facebook.com/profile.php?id=100091620543560) e vorrei saperne di pi\u00f9. Sono sicuro che da qualche parte si nasconda un'informazione importante...\n\np.s. Per risolvere questa challenge \u00e8 necessario possedere un account facebook.\n\nAutore: Pierluigi De Palo <@gigi0>",
+  "authors": [
+    "Pierluigi De Palo <@gigi0>"
+  ],
+  "tags": [
+    "osint"
+  ],
+  "hiddenTags": [],
+  "order": 12,
+  "flags": [
+    "^ITASEC\\{f4t3vi_1_f4tt1_m13i\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 100,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [
+    {
+      "name": "Hint 1",
+      "content": "...di un avvenimento importante. Ciao pap\u00e0!!!",
+      "price": 0
+    },
+    {
+      "name": "Hint 2",
+      "content": "Leggi attentamente il contenuto dei post presenti nella pagina. Anche se lungo, un testo va letto fino alla fine...",
+      "price": 0
+    }
+  ]
+}

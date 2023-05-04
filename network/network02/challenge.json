@@ -1,0 +1,40 @@
+{
+  "title": "Hidden cats",
+  "description": "Questi gatti sono davvero carini! \u00c8 proprio bella questa fotografia che ho scaricato!\n\nAutore: Nicola Guerrera <@nik012003>",
+  "authors": [
+    "Nicola Guerrera <@nik012003>"
+  ],
+  "tags": [
+    "network"
+  ],
+  "hiddenTags": [],
+  "order": 32,
+  "flags": [
+    "^ITASEC\\{4lways_p3t_th3_c4t\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 100,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "follow_the_white_cat.pcapng.gz",
+      "type": "upload",
+      "path": "./attachments/follow_the_white_cat.pcapng.gz"
+    }
+  ],
+  "hints": [
+    {
+      "name": "Hint 1",
+      "content": "Prova ad analizzare lo stream HTTP, facendo attenzione agli oggetti scaricati.",
+      "price": 0
+    },
+    {
+      "name": "Hint 2",
+      "content": "Su wireshark, esiste una funzione per esportare gli oggetti (File -> Export Objects).",
+      "price": 0
+    }
+  ]
+}

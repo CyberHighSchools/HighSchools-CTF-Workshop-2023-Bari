@@ -1,0 +1,34 @@
+{
+  "title": "HEXacly 5 t1mes",
+  "description": "L'**encoding** \u00e8 un sistema di segnali o simboli convenzionalmente designati per rappresentare un'informazione.\n\nIn questa challenge \u00e8 consigliato utilizzare [CyberChef](https://gchq.github.io/CyberChef/).\n\nFlag codificata:\n\n```text\nVmtkMFUyTnJNVlpPVlZaV1YwZG9VRlpyVlhka01WSnpWV3hLYkdGNlVqVlZNVkpQVkRGS1JrMVVUbFZYU0VKRFZGWmFkMk5XWkhSa1JUVnNZa1ZXTlZZeWVGTldhelZXVGxab1dGZElRazlhVjNoM1l6RlNkR05GTlU1aVNFSjRWakZTUTFSdFZuSldXR3hZWWtaS1lWUlVRWGhPYkZwWllrVTFWMUl4U25rPQ==\n```\n\nAutore: Daniele Di Spirito <@DanieleDiSpirito>",
+  "authors": [
+    "Daniele Di Spirito <@DanieleDiSpirito>"
+  ],
+  "tags": [
+    "crypto"
+  ],
+  "hiddenTags": [],
+  "order": 42,
+  "flags": [
+    "^ITASEC\\{t00_m4nY_3ncod1ng5!\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 100,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [
+    {
+      "name": "Hint 1",
+      "content": "Sei un mago! Cosa utilizza un mago? Una bacchetta.",
+      "price": 0
+    },
+    {
+      "name": "Hint 2",
+      "content": "Per riconoscere come \u00e8 stato cifrato il messaggio analizza i caratteri presenti.",
+      "price": 0
+    }
+  ]
+}

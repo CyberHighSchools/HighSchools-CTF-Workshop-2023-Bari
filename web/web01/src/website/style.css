@@ -1,0 +1,96 @@
+body {
+  background: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.title{
+  font-family: 'Courier', sans-serif;
+  font-size: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+figure {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  height: 90vh;
+  margin: 0;
+}
+figure:nth-child(1) img {
+  transform: scale(0.6) rotate(-12.5deg);
+}
+figure:nth-child(2) img {
+  transform: scale(0.6) rotate(-9.7222222222deg);
+}
+figure:nth-child(3) img {
+  transform: scale(0.6) rotate(-6.9444444444deg);
+}
+figure:nth-child(4) img {
+  transform: scale(0.6) rotate(-4.1666666667deg);
+}
+figure:nth-child(5) img {
+  transform: scale(0.6) rotate(-1.3888888889deg);
+}
+figure:nth-child(6) img {
+  transform: scale(0.6) rotate(1.3888888889deg);
+}
+figure:nth-child(7) img {
+  transform: scale(0.6) rotate(4.1666666667deg);
+}
+figure:nth-child(8) img {
+  transform: scale(0.6) rotate(6.9444444444deg);
+}
+figure:nth-child(9) img {
+  transform: scale(0.6) rotate(9.7222222222deg);
+}
+figure:nth-child(10) img {
+  transform: scale(0.6) rotate(12.5deg);
+}
+figure img {
+  width: 100vmin;
+  height: 100vmin;
+  border-radius: 16px;
+}
+
+figure img:hover{
+  cursor: pointer;
+}
+
+div.gallery {
+  padding: 10px;
+  border: 5px solid #ccc;
+  width: 300px;
+  transition: 300ms;
+}
+
+div.gallery:hover {
+  opacity: 0.5;
+  transition: 300ms;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-family: 'Courier', sans-serif;
+  font-size: 40px;
+  color: white;
+}
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

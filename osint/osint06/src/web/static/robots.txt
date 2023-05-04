@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+
+Sitemap: http://www.azienda-losca.tech/sitemap.xml
+Sitemap: http://azienda-losca.tech/sitemap.xml

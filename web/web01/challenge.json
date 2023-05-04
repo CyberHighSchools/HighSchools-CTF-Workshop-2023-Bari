@@ -1,0 +1,44 @@
+{
+  "title": "Galleria Vettoriale",
+  "description": "Abbiamo costruito la galleria di immagini vettoriale pi\u00f9 gettonata d'Italia, ma qualcuno ci vuole screditare agli occhi dei critici ed \u00e8 riuscito a inserire un'immagine di pessima qualit\u00e0 (anche se non visibile ad occhio nudo).\n\nSai dirci quale? La nostra intelligence ha rilevato che la richiesta di questa immagine potrebbe essere particolare...\n\nSito: [http://vectorial.challs.itasec.it:8083](http://vectorial.challs.itasec.it:8083)\n\nAutore: Vito Cafagno <@Alcu.ino>",
+  "authors": [
+    "Vito Cafagno <@Alcu.ino>"
+  ],
+  "tags": [
+    "web"
+  ],
+  "hiddenTags": [],
+  "order": 21,
+  "flags": [
+    "^ITASEC\\{p1r4t3s_h4v3_7h3_fl46!\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 100,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [
+    {
+      "name": "Hint 1",
+      "content": "La sezione rete di devtools pu\u00f2 essere di aiuto.",
+      "price": 0
+    },
+    {
+      "name": "Hint 2",
+      "content": "Nell'header della richiesta per l'immagine 4 contiene una bandiera aggiuntiva nella\u00a0richiesta\u00a0http.",
+      "price": 0
+    }
+  ],
+  "endpoint": {
+    "type": "http",
+    "url": "http://vectorial.challs.itasec.it:8083/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 5
+    }
+  }
+}

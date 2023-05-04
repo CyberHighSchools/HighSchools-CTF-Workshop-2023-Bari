@@ -1,0 +1,33 @@
+{
+  "title": "Bad at math",
+  "description": "I nostri agenti sono riusciti ad ottenere l'accesso alle app di messaggistica di un famoso criminale informatico.\n\nSfortunatamente i criminali non si fidavano della crittografia delle app di messaggistica e hanno deciso di criptare le loro comunicazioni con un algoritmo creato da essi stessi.\n\nFonti riportano che le loro incredibili conoscenze matematiche abbiano dato vita ad un crittosistema indecifrabile.\n\nDateci un occhiata, potete trovare le loro comunicazioni su [http://badatmat.challs.itasec.it:8082](http://badatmat.challs.itasec.it:8082)\n\nSappiamo che possiamo contare su di voi.\n\nFormato della flag: `ITASEC{chiaveNino_messaggioNino_chiaveElliot_messaggioElliot}`\n\nAutore: Nicola Pace <@nicolapace>",
+  "authors": [
+    "Nicola Pace <@nicolapace>"
+  ],
+  "tags": [
+    "crypto"
+  ],
+  "hiddenTags": [],
+  "order": 46,
+  "flags": [
+    "^ITASEC\\{5_staccahhhhhhah_4_testosegretissimo\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 100,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [
+    {
+      "name": "Hint 1",
+      "content": "[https://www.wolframalpha.com/](https://www.wolframalpha.com/) pu\u00f2 calcolare logaritmi.",
+      "price": 0
+    }
+  ],
+  "endpoint": {
+    "type": "http",
+    "url": "http://badatmat.challs.itasec.it:8082/"
+  }
+}

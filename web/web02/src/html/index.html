@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<head>
+	<title>CookieC(TF)liker</title>
+	<link rel="stylesheet" href="static/css/main.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="static/img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="static/img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon-16x16.png">
+	<link rel="manifest" href="static/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+	<div id="rainy-container"></div>
+
+	<div id="heading">
+		<h>COUNTER : </h>
+		<span id="counter" style="margin-left: 15px">0</span>
+	</div>
+	<div class="waveWrapper waveAnimation">
+		<div class="waveWrapperInner bgTop">
+			<div class="wave waveTop"
+				style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+		</div>
+		<div class="waveWrapperInner bgMiddle">
+			<div class="wave waveMiddle"
+				style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+		</div>
+	</div>
+	<div id="cookie-container">
+		<img class="shine" id="shine-left" src="https://orteil.dashnet.org/cookieclicker/img/shine.png" draggable="false">
+		<img class="shine" id="shine-right" src="https://orteil.dashnet.org/cookieclicker/img/shine.png" draggable="false">
+		<img id="cookie" src="static/img/cookie_pix.png" onclick="updateCounter(event)" draggable="false">
+	</div>
+</body>
+<script src="static/js/main.js"></script>
+
+</html>

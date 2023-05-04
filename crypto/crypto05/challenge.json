@@ -1,0 +1,38 @@
+{
+  "title": "Remote mtp",
+  "description": "Sono riuscito a fare RCE su questo servizio web, ho trovato un applicazione che permette di ricavare in parte il contenuro dei messaggi cifrati con il Many Time Pad, puoi aiutatmi a trovare il contenuto completo?\n\nIn cambio avrai una Flag!\n\nSito: [http://remotemtp.challs.itasec.it:8081](http://remotemtp.challs.itasec.it:8081)\n\nAutore: Vincenzo Cantatore <@M0rthimer>",
+  "authors": [
+    "Vincenzo Cantatore <@M0rthimer>"
+  ],
+  "tags": [
+    "crypto"
+  ],
+  "hiddenTags": [],
+  "order": 45,
+  "flags": [
+    "^ITASEC\\{Curv3B4ll_CVE-2020-0601\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 100,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [
+    {
+      "name": "Hint 1",
+      "content": "Alla riga 6 c'\u00e8 `IT___C` che sia la prima parte della flag?",
+      "price": 0
+    },
+    {
+      "name": "Hint 2",
+      "content": "Quando completi una parola ti consiglio di mettere uno spazio e quando finisce una frase metti un punto.",
+      "price": 0
+    }
+  ],
+  "endpoint": {
+    "type": "http",
+    "url": "http://remotemtp.challs.itasec.it:8081/"
+  }
+}

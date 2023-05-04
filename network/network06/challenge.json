@@ -1,0 +1,40 @@
+{
+  "title": "Noisy Bits",
+  "description": "Dentro una chiavetta USB ho trovato tante foto particolari in **bianco e nero**. Te ne do una, puoi vedere cosa nasconde?\n\nAutore: Salvatore Abello <@salvatore-abello>",
+  "authors": [
+    "Salvatore Abello <@salvatore-abello>"
+  ],
+  "tags": [
+    "network"
+  ],
+  "hiddenTags": [],
+  "order": 36,
+  "flags": [
+    "^ITASEC\\{n0t_s0_n01sy_b1ts!\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 100,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "bits.bmp",
+      "type": "upload",
+      "path": "./attachments/bits.bmp"
+    }
+  ],
+  "hints": [
+    {
+      "name": "Hint 1",
+      "content": "Questa foto rappresenta i bit di un file zip, dove il pixel nero rappresenta un bit posto a 0 ed il pixel bianco rappresenta un bit posto a 1.",
+      "price": 0
+    },
+    {
+      "name": "Hint 2",
+      "content": "Il metodo [Image.tobytes](https://pillow.readthedocs.io/en/stable/reference/Image.html#PIL.Image.Image.tobytes) della libreria [Pillow](https://pillow.readthedocs.io/en/stable/) pu\u00f2 tornarti utile.",
+      "price": 0
+    }
+  ]
+}

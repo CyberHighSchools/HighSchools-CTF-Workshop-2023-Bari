@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  web06:
+    build: .
+    restart: unless-stopped
+    ports:
+      - 8085:5000
+    environment:
+      - SECRET=UylIzWCHS0UMgTHVauwr
+    volumes:
+      - /execute/db

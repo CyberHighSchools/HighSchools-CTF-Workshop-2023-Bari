@@ -1,0 +1,7 @@
+version: "3.0"
+
+services:
+  web02:
+    build: .
+    ports:
+      - "8084:80"

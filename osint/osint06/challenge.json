@@ -1,0 +1,29 @@
+{
+  "title": "Chi cerca, trova!!!",
+  "description": "Sto navigando sul [sito dell'azienda](http://www.azienda-losca.tech/).\n\nLeggendo ci\u00f2 che c'\u00e8 scritto, sembra che l'azienda si dedichi alla progettazione di software.\n\nIo per\u00f2 non mi fido, sicuramente stanno mentendo come il CERN mente sulla macchina del tempo. Vorrei che indagassi, sono sicuro che cercando attentamente scopriremo qualcosa...\n\nAutore: Oscar Urselli <@Polonium>",
+  "authors": [
+    "Oscar Urselli <@Polonium>"
+  ],
+  "tags": [
+    "osint"
+  ],
+  "hiddenTags": [],
+  "order": 16,
+  "flags": [
+    "^ITASEC\\{1L_G4b1bb0_h4_un4_pAP3r4\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 100,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [
+    {
+      "name": "Hint 1",
+      "content": "Google \u00e8 tuo amico, cerca bene.",
+      "price": 0
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "title": "ITASECshop - 1mln$ Flag",
+  "description": "ITASEC quest'anno ha anche un suo shop di gadget personalizzati!\n\nSe vuoi darci un occhiata puoi comprare qualche gadget [qui](http://itasecshop.challs.itasec.it:8085)\n\nAlcuni articoli del sito per\u00f2 costano davvero tanto, in particolare la flag da 1 milione di dollari...\n\nCon le tue nuovi doti da hacker (grazie ai talk di ITASEC) riusciresti a comprarla?\n\nAutori:\n\n- Domingo Dirutigliano <@DomySh>\n- Vincenzo Turturro <@Sush1>",
+  "authors": [
+    "Domingo Dirutigliano <@DomySh>",
+    "Vincenzo Turturro <@Sush1>"
+  ],
+  "tags": [
+    "web"
+  ],
+  "hiddenTags": [],
+  "order": 24,
+  "flags": [
+    "^ITASEC\\{it_4as_A_th3ft_not_a_D0nat10n!\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 100,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "itasecshop.py",
+      "type": "upload",
+      "path": "./attachments/itasecshop.py"
+    }
+  ],
+  "hints": [
+    {
+      "name": "Hint 1",
+      "content": "Se non riesci ad acquistare nulla, dai un'occhiata alle donazioni.",
+      "price": 0
+    },
+    {
+      "name": "Hint 2",
+      "content": "Le donazioni sono quasi totalmente libere, puoi inserire QUALSIASI valore numerico a patto che sia minore del tuo wallet.",
+      "price": 0
+    }
+  ],
+  "endpoint": {
+    "type": "http",
+    "url": "http://itasecshop.challs.itasec.it:8085/"
+  }
+}

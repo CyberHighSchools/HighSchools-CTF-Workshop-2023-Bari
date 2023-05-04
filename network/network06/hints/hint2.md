@@ -1,0 +1,1 @@
+Il metodo [Image.tobytes](https://pillow.readthedocs.io/en/stable/reference/Image.html#PIL.Image.Image.tobytes) della libreria [Pillow](https://pillow.readthedocs.io/en/stable/) può tornarti utile.

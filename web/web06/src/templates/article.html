@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+   {% include 'head.html' %}
+  <body> 
+    {% include 'nav.html' %}
+    <div class="box-wrapper">
+        <div class="auto">
+        <div class="content">
+            <div class="left">
+                <img src="{{ article.img }}" alt="test" />
+            </div>
+            <div class="right">
+                <div class="right-content">
+                    {% if error is not none %}
+                        <div class="error">{{ error }}</div>
+                    {% elif success == True %}
+                        <div class="success">Articolo acquistato con successo.</div>
+                    {% endif %}
+                    <h1>{{ article.title }}</h1>
+                    <h3>{{ article.description }}</h3>
+                    <p>Costo: {{ article.price }}$</p>
+                    {% if article in user.articles %}
+                        <form action="/store/{{ article.id }}/buy" method="post" >
+                            <fieldset>
+                                <input type="submit" value="Giá acquistato." style="cursor: not-allowed;opacity: 0.7;" disabled/>
+                            </fieldset>
+                        </form>
+                    {% else %}
+                        <p>Contenuto segreto: Compra per sbloccare! </p>
+                        <form action="/store/{{ article.id }}/buy" method="post">
+                            <fieldset>
+                                <input type="submit" value="Compra"/>
+                            </fieldset>
+                        </form>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="secret-content">
+            {% if article in user.articles %}
+                <p>Contenuto segreto: <span>{{ article.secret_content | safe }}</span></p>
+            {% endif %}
+        </div>
+    </div>        
+    </div>
+
+    {% include 'footer.html' %}
+</body>
+</html>

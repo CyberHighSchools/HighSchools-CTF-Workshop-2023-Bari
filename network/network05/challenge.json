@@ -1,0 +1,40 @@
+{
+  "title": "Decrypt Me",
+  "description": "Anche se sono state intercettate le mie richieste non riuscirai mai a leggerle in chiaro!\n\nAutore: Luigi Amendolagine <@Lu191>",
+  "authors": [
+    "Luigi Amendolagine <@Lu191>"
+  ],
+  "tags": [
+    "network"
+  ],
+  "hiddenTags": [],
+  "order": 35,
+  "flags": [
+    "^ITASEC\\{n07_v3ry_53cur3_c0mmun1c4710n_pmsh9PkJ5e\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 100,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "decryptme.pcapng.gz",
+      "type": "upload",
+      "path": "./attachments/decryptme.pcapng.gz"
+    }
+  ],
+  "hints": [
+    {
+      "name": "Hint 1",
+      "content": "In una delle richieste in chiaro \u00e8 presente un file che non sarebbe mai dovuto essere stato esposto.",
+      "price": 0
+    },
+    {
+      "name": "Hint 2",
+      "content": "La flag \u00e8 stata divisa e codificata in 4 pagine differenti.",
+      "price": 0
+    }
+  ]
+}

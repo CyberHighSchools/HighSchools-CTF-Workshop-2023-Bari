@@ -1,0 +1,39 @@
+{
+  "title": "ITASECshop - Fridge Flag",
+  "description": "ITASEC quest'anno ha anche un suo shop di gadget personalizzati!\n\nSe vuoi darci un occhiata puoi comprare qualche gadget [qui](http://itasecshop.challs.itasec.it:8085)\n\nLo shop \u00e8 molto attento alla qualit\u00e0 e alla garazia del prodotto: c'\u00e8 una flag che deve essere conservata a -10\u00b0C, infatti prima dell'acquisto verificano in automatico se hai un 'Samsung Smart Fridge' per poterla conservare al meglio.\n\nRiusciresti ad ingannare il sito per comprare la flag?\n\nAutori:\n\n- Domingo Dirutigliano <@DomySh>\n- Vincenzo Turturro <@Sush1>",
+  "authors": [
+    "Domingo Dirutigliano <@DomySh>",
+    "Vincenzo Turturro <@Sush1>"
+  ],
+  "tags": [
+    "web"
+  ],
+  "hiddenTags": [],
+  "order": 25,
+  "flags": [
+    "^ITASEC\\{A_fr0zen_USER-AGENT\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 100,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [
+    {
+      "name": "Hint 1",
+      "content": "Le intestazioni di HTTP sono ricchissime di funzionalit\u00e0!",
+      "price": 0
+    },
+    {
+      "name": "Hint 2",
+      "content": "Un AGENTE mi ha detto che su internet puoi essere qualsiasi UTENTE tu decida di comunicare agli altri.",
+      "price": 0
+    }
+  ],
+  "endpoint": {
+    "type": "http",
+    "url": "http://itasecshop.challs.itasec.it:8085/"
+  }
+}
