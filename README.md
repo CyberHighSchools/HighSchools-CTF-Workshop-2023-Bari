@@ -1,4 +1,4 @@
-# ITASEC2023 - HighSchools CTF Workshop
+# HighSchools CTF Workshop - 2023 Pisa
 
 Challenge per l'HighSchools CTF Workshop di ITASEC2023 @ Bari - 02/05/2023
 
